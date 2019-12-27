@@ -38,7 +38,7 @@ sudo echo "$(cat /usr/lib/floflis/layers/server/flo-init)" >> /etc/init.d/flo-in
 sudo chmod 755 /etc/init.d/flo-init && sudo update-rc.d flo-init defaults
 
    echo "- Installing programs..."
-   sudo apt-get install ufw openssl nginx php php-fpm php-mysql phpmyadmin ftp ssh mysql-server sqlite
+   sudo apt-get install ufw openssl certbot nginx php php-fpm php-mysql phpmyadmin ftp ssh mysql-server sqlite
 # ufw firewall maybe will be used in other layers if it doesnt conflicts
 
    echo "- Cleanning install, saving settings..."
