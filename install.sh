@@ -14,6 +14,33 @@ case "${unameOutM}" in
     riscv64) flofarch="riscv64"
 esac
 
+# would detect fakeroot 
+#for path in ${LD_LIBRARY_PATH//:/ }; do
+#   if [[ "$path" == *libfakeroot ]]
+#      then
+#         echo "You're using fakeroot. Floflis won't work."
+#         exit
+#fi
+#done
+
+is_root=false
+
+if [ "$([[ $UID -eq 0 ]] || echo "Not root")" = "Not root" ]
+   then
+      is_root=false
+   else
+      is_root=true
+fi
+
+$maysudo=""
+
+if [ "$is_root" = "false" ]
+   then
+      $maysudo="sudo"
+   else
+      $maysudo=""
+fi
+
 cat << "EOF"
 -. .-.   .-. .-.   .-. .-.   .
   \   \ /   \   \ /   \   \ /
@@ -34,16 +61,16 @@ echo "- Detecting if Floflis Core is installed..."
 if [ -e /usr/lib/floflis/layers/core ]
 then
 echo "- Installing Floflis Server as init program..."
-sudo echo "$(cat /usr/lib/floflis/layers/server/flo-init)" >> /etc/init.d/flo-init && sudo rm -f /usr/lib/floflis/layers/server/flo-init
-sudo chmod 755 /etc/init.d/flo-init && sudo update-rc.d flo-init defaults
+$maysudo echo "$(cat /usr/lib/floflis/layers/server/flo-init)" >> /etc/init.d/flo-init && $maysudo rm -f /usr/lib/floflis/layers/server/flo-init
+$maysudo chmod 755 /etc/init.d/flo-init && $maysudo update-rc.d flo-init defaults
 
    echo "- Installing programs..."
-   sudo apt-get install ufw openssl certbot python-certbot-nginx nginx php php-fpm php-mysql phpmyadmin ftp ssh mysql-server sqlite
+   $maysudo apt-get install ufw openssl certbot python-certbot-nginx nginx php php-fpm php-mysql phpmyadmin ftp ssh mysql-server sqlite
 # ufw firewall maybe will be used in other layers if it doesnt conflicts
 
    echo "- Cleanning install, saving settings..."
-   sudo rm /usr/lib/floflis/layers/server/install.sh
-   sudo sed -i 's/soil//g' /usr/lib/floflis/config && sudo sed -i 's/core/server/g' /usr/lib/floflis/config
+   $maysudo rm /usr/lib/floflis/layers/server/install.sh
+   $maysudo sed -i 's/soil//g' /usr/lib/floflis/config && $maysudo sed -i 's/core/server/g' /usr/lib/floflis/config
    echo "(✓) Floflis Core: POWERUP with Floflis Server!"
 else
    echo "(X) Floflis Core isn't found. Please install Floflis DNA before installing Floflis Server."
