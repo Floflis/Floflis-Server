@@ -73,7 +73,7 @@ $maysudo chmod 755 /etc/init.d/flo-init && $maysudo update-rc.d flo-init default
    echo "- Cleanning install, saving settings..."
    $maysudo rm /usr/lib/floflis/layers/server/install.sh
    $maysudo sed -i 's/soil//g' /usr/lib/floflis/config && $maysudo sed -i 's/core/server/g' /usr/lib/floflis/config
-   bash /usr/lib/floflis/config
+   . /usr/lib/floflis/./config
    contents="$(jq ".layer = \"$layer\"" /1/Floflis/system/os.json)" && \
    echo "${contents}" > /1/Floflis/system/os.json
    contents="$(jq ".nxtlayer = \"$nxtlayer\"" /1/Floflis/system/os.json)" && \
