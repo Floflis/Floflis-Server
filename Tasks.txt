@@ -1,0 +1,1 @@
+- research dappnode (how to insert it into fl-server layer) https://docs.dappnode.io/docs/user/install/iso
