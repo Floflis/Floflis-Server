@@ -1,1 +1,11 @@
+Floflis Server 2023 comes with:
+- sudo apt install fio #Do you have a drive and want to check it it is fast enough? On a Linux machine, can use the fio utility like so. https://docs.shamirlabs.org/testnet/hardware/requirements/
+- https://www.digitalocean.com/community/tutorials/how-to-secure-nginx-with-let-s-encrypt-on-ubuntu-20-04-pt
+- https://www.digitalocean.com/community/tutorials/how-to-install-linux-apache-mysql-php-lamp-stack-on-ubuntu-16-04, https://www.digitalocean.com/community/tutorials/how-to-secure-apache-with-let-s-encrypt-on-ubuntu-20-04-pt
+
+Telegram 30 Sep 2023 13:52:21:BR:
+"Insp Floflis Server 2023: https://youtu.be/zE1Chlgwqow?si=LawI88WSGz0ym9cb"
+
 - research dappnode (how to insert it into fl-server layer) https://docs.dappnode.io/docs/user/install/iso
+
+Floflis Server 2025: help running a multi-sig Ethereum Validator https://twitter.com/intocryptoast/status/1716870487744348254 https://archive.is/qykzO
