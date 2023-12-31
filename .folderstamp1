@@ -1,0 +1,62 @@
+This folder: /media/daniella/B/bkp/ST500LM012 HN-M500MBB Dat/0/ok/Pendrive/flshdrive/layer-bkp/special/server
+
+  File: ./floflis
+  Size: 11        	Blocks: 0          IO Block: 4096   regular file
+Device: 8,20	Inode: 955944      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2021-10-20 19:50:10.020767300 -0300
+Modify: 2019-12-09 19:14:06.968668000 -0300
+Change: 2020-12-10 21:35:57.397944000 -0300
+ Birth: 2020-12-10 21:35:57.392817100 -0300
+IPFS hash: QmWM7h43T6RpmiEyowNViERJHDd1Cdz2bqq9o1948D46BG
+------------------------------
+  File: ./flo-init
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 8,20	Inode: 955945      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2020-12-20 18:17:12.014720300 -0300
+Modify: 2019-12-09 19:14:17.266236000 -0300
+Change: 2020-12-10 21:35:57.428520700 -0300
+ Birth: 2020-12-10 21:35:57.423409400 -0300
+IPFS hash: QmbFMke1KXqnYyBBWxB74N4c5SBnJMVAiMNRcGu6x1AwQH
+------------------------------
+  File: ./install.sh
+  Size: 2923      	Blocks: 8          IO Block: 4096   regular file
+Device: 8,20	Inode: 1472637     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2021-11-27 14:08:40.080918900 -0300
+Modify: 2021-11-07 18:02:11.888031600 -0300
+Change: 2021-11-07 18:02:11.980067400 -0300
+ Birth: 2021-11-07 18:02:11.884525000 -0300
+IPFS hash: QmY7FbrZMPZFDN9zz5swSF8HZkPuo8HgjNQVyBW7EbJapz
+------------------------------
+  File: ./presentation
+  Size: 644       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,20	Inode: 955946      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2021-10-20 19:50:10.350886800 -0300
+Modify: 2020-01-02 20:05:02.173455000 -0300
+Change: 2020-12-10 21:35:57.488418500 -0300
+ Birth: 2020-12-10 21:35:57.455678600 -0300
+IPFS hash: QmcBgMm5hUfiuKsKC9Jio4HfGmrPFUhHYA3RgR5e3tZGmK
+------------------------------
+  File: ./README.md
+  Size: 0         	Blocks: 0          IO Block: 4096   regular empty file
+Device: 8,20	Inode: 955947      Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2020-12-20 18:17:12.023063600 -0300
+Modify: 2019-12-09 19:15:28.445172000 -0300
+Change: 2020-12-10 21:35:57.521033000 -0300
+ Birth: 2020-12-10 21:35:57.515324800 -0300
+IPFS hash: QmbFMke1KXqnYyBBWxB74N4c5SBnJMVAiMNRcGu6x1AwQH
+------------------------------
+  File: ./Tasks.txt
+  Size: 934       	Blocks: 8          IO Block: 4096   regular file
+Device: 8,20	Inode: 4268252     Links: 1
+Access: (0755/-rwxr-xr-x)  Uid: ( 1000/daniella)   Gid: ( 1000/daniella)
+Access: 2023-10-25 18:05:18.303951500 -0300
+Modify: 2023-10-25 18:05:12.534633300 -0300
+Change: 2023-10-25 18:05:12.586572700 -0300
+ Birth: 2023-10-25 18:05:12.517198100 -0300
+IPFS hash: QmXDTmnKJ2mrmnNbAM2tmifhDoUkEvZRJfQTy9dKv3K1zQ
+------------------------------

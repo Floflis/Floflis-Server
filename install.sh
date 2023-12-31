@@ -1,20 +1,15 @@
 #!/bin/bash
 
-# Layer: Server
+# Layer: Core:Server
 
-# load definitions & settings
-source /usr/lib/floflis/config
-# it doesn't works yet. need to do it manually here:
+#. /usr/lib/floflis/./config
+. "$FLOPREFIX"usr/lib/floflis/./config #expecting $FLOPREFIX has been successfuly imported from DNA's installer
+#export FLOPREFIX
+#fi
+#export flofmach && export flofdistro && export flofarch && export osfullname && export osname && export osversion && export osbuild && export osbuildcodename && export updatepatch && export year && export layer && export nxtlayer && export distrobase && export user && export specialbuildattempt
+# <---- load definitions & settings
 
-unameOutM="$(uname -m)"
-case "${unameOutM}" in
-    i286)   flofarch="286";;
-    i386)   flofarch="386";;
-    i686)   flofarch="386";;
-    x86_64) flofarch="amd64";;
-    arm)    dpkg --print-flofarch | grep -q "arm64" && flofarch="arm64" || flofarch="arm";;
-    riscv64) flofarch="riscv64"
-esac
+SCRIPTPATH="$( cd -- "$(dirname "$0")" >/dev/null 2>&1 ; pwd -P )"
 
 # would detect fakeroot 
 #for path in ${LD_LIBRARY_PATH//:/ }; do
