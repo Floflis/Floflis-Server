@@ -65,8 +65,12 @@ $maysudo echo "$(cat /usr/lib/floflis/layers/server/flo-init)" >> /etc/init.d/fl
 $maysudo chmod 755 /etc/init.d/flo-init && $maysudo update-rc.d flo-init defaults
 
    echo "- Installing programs..."
-   $maysudo apt-get install ufw openssl certbot python-certbot-nginx nginx php php-fpm php-mysql phpmyadmin ftp ssh mysql-server sqlite
+   $maysudo apt update
+   $maysudo apt-get install ufw openssl certbot python-certbot-nginx nginx php php-fpm php-mysql phpmyadmin ftp ssh mysql-server sqlite -y
 # ufw firewall maybe will be used in other layers if it doesnt conflicts
+
+$maysudo apt install curl nkf -y
+$maysudo apt install fio -y #Do you have a drive and want to check it it is fast enough? On a Linux machine, can use the fio utility like so. https://docs.shamirlabs.org/testnet/hardware/requirements/
 
    echo "- Cleanning install, saving settings..."
    $maysudo rm /usr/lib/floflis/layers/server/install.sh
